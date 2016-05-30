@@ -10,3 +10,5 @@ RUN lein
 
 RUN curl -o /tmp/LightTable.zip https://github.com/LightTable/LightTable/archive/master.zip
 RUN unzip /tmp/LightTable.zip -d /usr/local/bin/
+
+WORKDIR /home/
