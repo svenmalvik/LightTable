@@ -11,4 +11,7 @@ RUN lein
 RUN curl -Lo /tmp/LightTable.zip https://github.com/LightTable/LightTable/archive/master.zip
 RUN unzip /tmp/LightTable.zip -d /usr/local/bin/
 
+RUN curl -sL https://deb.nodesource.com/setup | bash -
+RUN apt-get install -y nodejs && apt-get install -y build-essential
+
 WORKDIR /home/
