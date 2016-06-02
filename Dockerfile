@@ -9,7 +9,7 @@ RUN curl -o /usr/local/bin/lein https://raw.githubusercontent.com/technomancy/le
   && chmod u+x /usr/local/bin/lein
 
 RUN mkdir /root/.config
-ENV LT_USER_DIR /home/.config
+ENV LT_USER_DIR /root/.config
 ENV LEIN_ROOT true
 RUN lein
 
