@@ -8,6 +8,7 @@ RUN apt-get update -y && apt-get install -y vim unzip libcanberra-gtk-module
 RUN curl -o /usr/local/bin/lein https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein \
   && chmod u+x /usr/local/bin/lein
 
+RUN mkdir /home/.config
 ENV LT_USER_DIR /home/.config
 ENV LEIN_ROOT true
 RUN lein
